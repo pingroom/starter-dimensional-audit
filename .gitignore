@@ -1,0 +1,8 @@
+node_modules/
+.env*
+!.env.example
+/.pingroom/
+/.dimensional-audit/
+/formula.json
+/config.json
+.DS_Store

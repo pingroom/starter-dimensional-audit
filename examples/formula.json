@@ -1,0 +1,39 @@
+{
+  "auditId": "practice-cart",
+  "title": "Practice cart worksheet",
+  "context": "A fictional classroom formula, not a physical control system.",
+  "variables": [
+    {
+      "id": "distance",
+      "meaning": "The track distance recorded in the worksheet.",
+      "source": "Worksheet row: distance = 6; the column heading lost its unit.",
+      "candidates": [
+        "m",
+        "s",
+        "one"
+      ]
+    },
+    {
+      "id": "duration",
+      "meaning": "The elapsed time recorded in the worksheet.",
+      "source": "Worksheet row: duration = 2; the column heading lost its unit.",
+      "candidates": [
+        "s",
+        "m",
+        "one"
+      ]
+    }
+  ],
+  "expression": {
+    "type": "divide",
+    "left": {
+      "type": "variable",
+      "id": "distance"
+    },
+    "right": {
+      "type": "variable",
+      "id": "duration"
+    }
+  },
+  "expectedUnit": "m_per_s"
+}
